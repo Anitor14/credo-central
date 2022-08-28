@@ -22,6 +22,11 @@ body {
 a {
   text-decoration: none;
   background-color: transparent;
+  text-decoration: none !important;
+}
+svg,
+img {
+  vertical-align: middle;
 }
 
 .container {
@@ -61,4 +66,98 @@ a {
   margin-top: 8px;
   margin-bottom: 8px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.navigation-pane {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 0px;
+  flex-wrap: wrap;
+  backgroud: rgb(7, 72, 211) none repeat scroll 0% 0%;
+}
+
+.svg-container {
+  display: block;
+  cursor: pointer;
+}
+
+svg {
+  overflow: hidden;
+}
+
+.navigation-links {
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.link {
+  padding-top: 1.7em;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  height: 70px;
+  position: relative;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+}
+.link:not(:first-child) {
+  margin-left: 70px;
+}
+.link:hover {
+  font-weight: bold;
+  color: rgba(255, 255, 255);
+  border-bottom: 2px solid rgba(255, 255, 255);
+}
+.navigation-right {
+  display: flex;
+  align-items: center;
+}
+
+.sign-in {
+  width: 127px;
+  height: 43px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease 0s;
+}
+
+.get-started {
+  width: 127px;
+  height: 43px;
+  border: 1px solid rgb(255, 255, 255);
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 4px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+.hero-section {
+  padding: 0px 0px 60px 104px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.hero-details {
+  width: 40%;
+  margin-top: 15px;
 }
