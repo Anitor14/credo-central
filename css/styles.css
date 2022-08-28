@@ -1,0 +1,64 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: #414242;
+  background-color: transparent;
+  position: relative;
+  margin: 0;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.container {
+  min-height: 859px;
+  width: 100%;
+  background: rgb(7, 72, 211) none repeat scroll 0% 0%;
+  padding-bottom: 20px;
+}
+
+.navigation {
+  width: 100%;
+  background: rgb(7, 72, 211) none repeat scroll 0% 0%;
+  padding: 11.5px 20px 15px;
+}
+
+.nav-top {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+  color: rgb(255, 255, 255);
+}
+
+.nav-top p {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+  margin-left: 55px;
+  cursor: pointer;
+  margin-bottom: 0.6rem;
+}
+
+.nav-top p a {
+  color: inherit;
+}
+
+.linethrough {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
