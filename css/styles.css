@@ -154,6 +154,11 @@ svg {
     transition: all 0.3s ease 0s;
   }
 
+  .sign-in:hover {
+    background: rgba(255, 255, 255);
+    color: rgb(24, 76, 203);
+  }
+
   .get-started {
     width: 127px;
     height: 43px;
@@ -169,6 +174,12 @@ svg {
     margin-left: 4px;
     cursor: pointer;
     color: rgb(255, 255, 255);
+    transition: all 0.3s ease 0s;
+  }
+  .get-started:hover {
+    border: none;
+    background: rgba(255, 255, 255);
+    color: rgb(24, 76, 203);
   }
   .nav-btn {
     display: none;
