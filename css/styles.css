@@ -24,12 +24,22 @@ a {
   background-color: transparent;
   text-decoration: none !important;
 }
+a:hover {
+  color: #0046ba;
+  text-decoration: underline;
+}
 svg {
   overflow: hidden;
 }
 svg,
 img {
     vertical-align: middle;
+}
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border:0;
+  border-top: 1px solid rgba(0,0,0,.1)
 }
 
 .container {
@@ -66,7 +76,7 @@ img {
 
 .nav-top p {
   font-size: 14px;
-  line-height: 17px;
+  line-height: 17px; 
   letter-spacing: -0.02em;
   margin-left: 55px;
   cursor: pointer;
@@ -121,11 +131,13 @@ svg {
 .navigation-right {
   display: none;
 }
+
 .nav-btn {
   cursor: pointer;
   display: block;
   stroke: rgb(255, 255, 255) !important;
 }
+
 .social-payment-div {
   position:absolute;
   top:4.3rem;
@@ -133,6 +145,7 @@ svg {
   display: block;
   z-index:9999
 }
+
 .inner-social-payment-div{
   width:678px;
   min-height:259px;
@@ -145,11 +158,20 @@ svg {
   box-shadow:rgba(0,0,0,0.18) 0px 1rem 3rem;
   z-index:2000;
 }
+/* Social Payment div styles. */
 .social-payment {
   display: flex;
   width: 280px;
   padding:15px;
   cursor: pointer;
+}
+.social-payment:hover {
+  background: rgb(255,255,255);
+  box-shadow:rgb(7 72 211 / 10%) 0px 30px 20px;
+}
+
+.social-payment:hover .social-payment-arrow {
+  display:none;
 }
 .social-payment img {
   margin-top: -5px;
@@ -175,12 +197,98 @@ svg {
   text-align: right;
 }
 .social-payment-arrow-hover {
+  margin-top: 30px;
   display:none;
+}
+.social-payment:hover .social-payment-arrow-hover {
+  display:block;
+  text-align: right;
 }
 .social-payment-vertical-line {
   opacity: 0.03;
   border-right: 1px solid rgb(0,0,0)
 }
+
+.bell-icon {
+  position:absolute;
+  right:-70px;
+  bottom:-75px;
+  width:150px;
+  height:150px;
+}
+.bell-icon img {
+  width: 100%;
+  height: 100%;
+}
+/* Credo div styles
+.credo-div {
+  width: 1086px;
+  height: 451px;
+  border-radius:10px;
+  display:flex;
+  box-shadow:rgb(0 0 0 / 18%) 0px 1rem 3rem;
+  z-index:1000;
+}
+.credo-left-div {
+  width:calc(100% - 275px);
+  background:rgb(255,255,255);
+  height:100%;
+  border-radius:10px 0px 0px 10px;
+  padding:31px 0px 60px;
+}
+.credo-left-div .credo-left-top {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding-right:42px;
+  padding-left:42px;
+}
+.credo-left-top-text {
+  width:60%;
+}
+.credo-left-top-text h3 {
+  font-weight:bold;
+  font-size: 23px;
+  line-height: 148%;
+  color: rgb(53,53,66);
+}
+.credo-left-top-text p {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 130%;
+  color: rgb(138, 143,153);
+  letter-spacing: -0.03em;
+}
+.credo-left-top-button {
+  width:160px;
+  height:49px;
+  background: rgb(7,72, 211);
+  border-radius:5px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 148%;
+  letter-spacing: -0.05em;
+  color: rgb(255,255,255);
+  cursor: pointer;
+}
+.credo-left-top-button p {
+  margin-left: 7px;
+}
+//credo-left-bottom
+.credo-left-bottom {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.credo-left-bottom-product-text {
+  font-weight:bold;
+  font-size: 18px;
+} */
+
+
 
 @media screen and (min-width: 768px) {
   .nav-top {
@@ -213,6 +321,7 @@ svg {
     color: rgba(255, 255, 255);
     border-bottom: 2px solid rgba(255, 255, 255);
   }
+
   .navigation-right {
     display: flex;
     align-items: center;
@@ -240,8 +349,8 @@ svg {
   }
 
   .get-started {
-      width: 127px;
-      height: 43px;
+    width: 127px;
+    height: 43px;
     border: 1px solid rgb(255, 255, 255);
     box-sizing: border-box;
     border-radius: 10px;
@@ -383,6 +492,7 @@ svg {
     .sidebar {
       display: none;
     }
+  }
 
 /* Hero Section  */
 .hero-section {
