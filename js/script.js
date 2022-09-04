@@ -24,3 +24,5 @@ closeBtn.addEventListener("click", function () {
   // sidebar.classList.remove("show-sidebar");
     sidebar.style.display = "none";
 });
+
+//see how f
