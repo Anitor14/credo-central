@@ -142,7 +142,7 @@ svg {
   position: absolute;
   top: 4.3rem;
   left: -20rem;
-  display: block;
+  display: none;
   z-index: 9999;
 }
 
@@ -452,7 +452,9 @@ Credo div styles .credo-div {
     color: rgba(255, 255, 255);
     border-bottom: 2px solid rgba(255, 255, 255);
   }
-
+  .link:hover .hover-div {
+    display: block;
+  }
   .navigation-right {
     display: flex;
     align-items: center;
