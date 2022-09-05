@@ -220,58 +220,57 @@ svg {
   width: 100%;
   height: 100%;
 }
-/* Credo div styles
-.credo-div {
+Credo div styles .credo-div {
   width: 1086px;
   height: 451px;
-  border-radius:10px;
-  display:flex;
-  box-shadow:rgb(0 0 0 / 18%) 0px 1rem 3rem;
-  z-index:1000;
+  border-radius: 10px;
+  display: flex;
+  box-shadow: rgb(0 0 0 / 18%) 0px 1rem 3rem;
+  z-index: 1000;
 }
 .credo-left-div {
-  width:calc(100% - 275px);
-  background:rgb(255,255,255);
-  height:100%;
-  border-radius:10px 0px 0px 10px;
-  padding:31px 0px 60px;
+  width: calc(100% - 275px);
+  background: rgb(255, 255, 255);
+  height: 100%;
+  border-radius: 10px 0px 0px 10px;
+  padding: 31px 0px 60px;
 }
 .credo-left-div .credo-left-top {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding-right:42px;
-  padding-left:42px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 42px;
+  padding-left: 42px;
 }
 .credo-left-top-text {
-  width:60%;
+  width: 60%;
 }
 .credo-left-top-text h3 {
-  font-weight:bold;
+  font-weight: bold;
   font-size: 23px;
   line-height: 148%;
-  color: rgb(53,53,66);
+  color: rgb(53, 53, 66);
 }
 .credo-left-top-text p {
   font-weight: normal;
   font-size: 13px;
   line-height: 130%;
-  color: rgb(138, 143,153);
+  color: rgb(138, 143, 153);
   letter-spacing: -0.03em;
 }
 .credo-left-top-button {
-  width:160px;
-  height:49px;
-  background: rgb(7,72, 211);
-  border-radius:5px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  width: 160px;
+  height: 49px;
+  background: rgb(7, 72, 211);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: normal;
   font-size: 14px;
   line-height: 148%;
   letter-spacing: -0.05em;
-  color: rgb(255,255,255);
+  color: rgb(255, 255, 255);
   cursor: pointer;
 }
 .credo-left-top-button p {
@@ -284,9 +283,9 @@ svg {
 }
 
 .credo-left-bottom-product-text {
-  font-weight:bold;
+  font-weight: bold;
   font-size: 18px;
-} */
+}
 
 /* Resources div  */
 .resources-div {
@@ -305,12 +304,31 @@ svg {
   opacity: 0.05;
   border: 1px solid rgba(0, 0, 0);
 }
-.resources-div-left {
-  width: 70%;
-  height: 100%;
-}
 .resources-div-right {
   width: 30%;
+  height: 100%;
+}
+.resources-div-right-section {
+  background: linear-gradient(
+    177.65deg,
+    rgb(7, 101, 255) 56.73%,
+    rgb(0, 226, 255) 125.31%
+  );
+  border-radius: 10px;
+  height: 100%;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+.resources-div-right-section-div {
+  padding: 19px;
+}
+
+.resources-div-left {
+  width: 70%;
   height: 100%;
 }
 .resources-div-left-section {
@@ -393,7 +411,7 @@ svg {
   padding-top: 20px;
 }
 .resources-div-left-section-bottom-link-1 {
-  font-family: Pangram;
+  font-family: sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
