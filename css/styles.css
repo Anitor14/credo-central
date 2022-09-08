@@ -410,7 +410,8 @@ Credo div styles .credo-div {
   padding-left: 50px;
   padding-top: 20px;
 }
-.resources-div-left-section-bottom-link-1 {
+.resources-div-left-section-bottom-link-1,
+.resources-div-left-section-bottom-link {
   font-family: sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -419,6 +420,78 @@ Credo div styles .credo-div {
   letter-spacing: -0.03em;
   color: rgb(0, 0, 0);
   padding: 0px 20px;
+}
+.resources-div-left-section-bottom-link {
+  border-left: 0.5px solid rgb(0, 0, 0);
+}
+
+/* Cleo Div  */
+.cleo-bot-div {
+  position: absolute;
+  box-shadow: rgb(0 0 0 / 18%) 0px 1rem 3rem;
+  z-index: 1000;
+  left: 312.1px;
+}
+.cleo-bot-inner-div {
+  display: block;
+  width: 181px;
+  height: 107px;
+  background: rgb(255, 255, 255);
+  border-radius: 15px;
+  padding: 15px;
+  cursor: pointer;
+}
+.cleo-bot-inner-div-flex {
+  display: flex;
+  align-items: center;
+}
+.cleo-bot-inner-div-flex h5 {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgb(53, 53, 66);
+}
+.cleo-bot-inner-div-button {
+  width: 32px;
+  height: 15px;
+  left: 42px;
+  top: 2px;
+  background: rgb(50, 201, 106);
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 9px;
+  line-height: 11px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  align-items: center;
+  justify-content: center;
+  margin-left: 7px;
+  margin-top: -5px;
+  display: flex;
+  text-align: center;
+}
+
+.cleo-bot-inner-div p {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 135%;
+  letter-spacing: -0.02em;
+  color: rgb(53, 53, 66);
+  opacity: 0.8;
+}
+
+.cleo-bot-inner-div .learn-more {
+  font-weight: bold;
+  font-size: 9px;
+  line-height: 130%;
+  letter-spacing: -0.03em;
+  margin-top: 5px;
+}
+
+.cleo-bot-div img {
+  position: absolute;
+  right: -80px;
+  bottom: -60px;
 }
 
 @media screen and (min-width: 768px) {
